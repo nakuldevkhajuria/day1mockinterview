@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <h2 style="text-align: center;">Day 1: Javascript Interview Questions.</h2>
+        <p>
+        Question1 :  Difference between “ == “ and “ === “ operators.
+        Question2 :  What is the spread operator?
+        Question3 :  What are the differences between var, let and const?
+        Question4 :  What is execution context
+        Question5 :  What is meant by first class functions
+        Question6 :  What are closures? Give an example of closure
+        Question7 :  Explain call(), apply() and, bind() methods.
+         Give an example of call(), apply(), bind()
+        </p>
+        <p>
+        Solution 1: equality vs strict equality
+            they return the boolean value and the diff in both is that
+            '==' only compares the values and '===' compare the type and value both.
+
+        Solution 2:
+            spread operator is use to merge any array, or object.
+            and create a new array or object.
+            it is used to destructure the non primitive data types.array and object.
+
+        Solution 3:
+            var shows hoisting, and let & const dont.
+
+            Hoisting also occurs with function declarations.Hoisting can be confusing for new JavaScript 
+            developers because it means that code can appear to "use" variables or functions before they are 
+            declared.
+
+            var doesnt use, temporal dead zone.
+            TDZ is a place where the variable which is declared using
+            let and const are been stored.
+            And if the variable is not initiated then on accessing the 
+            variable it will give us Reference Error.
+            and in the same case with var it will return undefined.
+
+            value of const cannot be changed but value of let and var can be changed.
+            accoording to the scope change.
+
+            var is global scoped and let and const are block scoped.
+
+        Solution 4:
+            An execution context consists of two things:
+
+            1. A reference to the variable object (VO) that represents the current scope of the code.
+            2. A reference   to the value of the this keyword, which is determined by how the code is 
+            called.
+
+
+            types of Execution context:
+            1. global Execution context.
+            2. function execution context
+            3. eval execution context
+
+            In addition to these three types of execution contexts, there is also a concept called the 
+            "execution context stack," which is a stack of execution contexts that represents the order in which functions are called.
+
+
+        Solution 5:
+            In summary, a first-class function in JavaScript is a function that can be stored in a variable, 
+            passed as an argument to a function, returned as a value from a function, and treated like any other object in the language.
+
+        Solution 6:
+        Closures are often used in JavaScript to create private variables and methods. For example, a 
+        closure can be used to define an object that has a private property, and a public method that can 
+        access and modify that property. 
+
+
+        </p>
+    </pre>
+    <script src="./main.js"></script>
+</body>
+</html>
